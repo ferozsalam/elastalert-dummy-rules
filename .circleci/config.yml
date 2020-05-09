@@ -12,5 +12,5 @@ jobs:
     working_directory: ~/
 
     steps:
-      - checkout
+      - checkout git@github.com:ferozsalam/elastalert-dummy-rules.git
       - run: ls
