@@ -9,8 +9,8 @@ jobs:
        - "discovery.type=single-node"
        - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
 
-    working_directory: ~/
+    working_directory: /data
 
     steps:
-      - checkout /data
+      - checkout
       - run: ls
