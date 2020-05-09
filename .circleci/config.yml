@@ -12,5 +12,5 @@ jobs:
     working_directory: ~/
 
     steps:
-      - checkout dummy-rules
+      - checkout /data
       - run: ls
