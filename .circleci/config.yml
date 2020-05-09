@@ -12,6 +12,5 @@ jobs:
     working_directory: ~/
 
     steps:
-      # command will execute in trusty container
-      # and can access mongo on localhost
-      - run: echo "hello"
+      - checkout
+      - run: ls
