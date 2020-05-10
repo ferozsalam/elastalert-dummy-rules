@@ -15,5 +15,5 @@ jobs:
       - checkout
       - run: >-
           dockerize -wait http://localhost:9200 -timeout 120s
-            python elastalert-unit.py --data /data/tests/data.json
+            python /data/elastalert-unit.py --data /data/tests/data.json
               --rule /data/tests/rule.yaml
