@@ -11,5 +11,5 @@ alert_text: "test alert"
 alert:
   - "debug"
 
-ci_start_time: "2020-05-13T10:08:44"
-ci_end_time: "2020-05-13T15:08:44"
+ci_start_time: "2020-05-10T10:08:44"
+ci_end_time: "2020-05-10T15:08:44"
