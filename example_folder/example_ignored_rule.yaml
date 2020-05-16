@@ -1,0 +1,15 @@
+name: "Dummy rule"
+description: "Dummy rule to illustrate CI for Elastalert"
+
+index: bank
+type: any
+filter:
+  - query_string:
+      query: "*"
+
+alert_text: "test alert"
+alert:
+  - "debug"
+
+# This rule will be ignored by the CI system because it doesn't have a defined `ci_data_source`
+# ci_data_source: "accounts"
