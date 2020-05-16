@@ -8,7 +8,7 @@ jobs:
        environment:
        - "discovery.type=single-node"
        - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-    parallelism: 2
+    parallelism: 4
 
     working_directory: /data/tests/
 
