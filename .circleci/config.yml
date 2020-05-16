@@ -15,5 +15,5 @@ jobs:
     steps:
       - checkout
       - run: >-
-            dockerize -wait http://localhost:9200 -timeout 120s python /data/elastalert-unit.py --data data-files.yaml
-              --rule $(circleci tests glob "**/*.yaml" | circleci tests split)
+            dockerize -wait http://localhost:9200 -timeout 120s
+              python /data/elastalert-unit.py --data data-files.yaml --rule $(circleci tests glob "*.yaml" | circleci tests split)
