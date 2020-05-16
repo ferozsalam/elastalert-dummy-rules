@@ -1,0 +1,18 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+     - image: ferozsalam/elastalert-unit:latest
+     - image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
+       environment:
+       - "discovery.type=single-node"
+       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+
+    working_directory: /data/tests/
+
+    steps:
+      - checkout
+      - run: >-
+          dockerize -wait http://localhost:9200 -timeout 120s
+            python /data/elastalert-unit.py --data data-files.yaml --rule rule.yaml
