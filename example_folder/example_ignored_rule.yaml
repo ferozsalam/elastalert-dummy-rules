@@ -1,4 +1,4 @@
-name: "Dummy rule"
+name: "Dummy rule - [will be skipped]"
 description: "Dummy rule to illustrate CI for Elastalert"
 
 index: bank

@@ -1,4 +1,4 @@
-name: "Dummy rule"
+name: "Dummy rule - within subfolder"
 description: "Dummy rule to illustrate CI for Elastalert"
 
 index: bank
