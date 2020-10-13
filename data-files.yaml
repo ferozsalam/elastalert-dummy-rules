@@ -1,4 +1,7 @@
 accounts:
   filename: "data.json"
+  rules:
+    - "Dummy rule - within subfolder"
+    - "Dummy rule"
   start_time: "2020-05-10T10:08:44"
   end_time: "2020-05-10T15:08:44"
