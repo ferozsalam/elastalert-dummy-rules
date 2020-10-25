@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-     - image: ferozsalam/elastalert-ci:latest
+     - image: ferozsalam/elastalert-ci:0.1.1
      - image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
        environment:
        - "discovery.type=single-node"
